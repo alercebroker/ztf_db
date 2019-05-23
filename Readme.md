@@ -97,11 +97,11 @@
 
 ## 4. features
 
-// Insert description
+Description of FATS features is in http://isadoranun.github.io/tsfeat/FeaturesDocumentation.html#The-features
 
 | Column         | Type             | Modifier | Description |
 | -------------- | ---------------- | -------- | ----------- |
-|oid            | text             | not null  |              |
+|oid            | text             | not null  | ZTF object id|
 |n_samples_1    | integer          |           |              |
 |amplitude_1                   | double precision |           |              |
 |andersondarling_1             | double precision |           |              |
@@ -205,26 +205,26 @@
 |  freq3_harmonics_rel_phase_2_2  |  double precision  |             | |
 |  freq3_harmonics_amplitude_3_2  |  double precision  |             | |
 |  freq3_harmonics_rel_phase_3_2  |  double precision  |             | |
-|  gal_b                          |  double precision  |             | |
-|  gal_l                          |  double precision  |             | |
+|  gal_b                          |  double precision  |             | galactic latitude |
+|  gal_l                          |  double precision  |             | galactic longitude |
 |  object_id                      |  integer           |             | |
 
 
 ## 5. probabilities
 
-// Insert description
+Random Forest probabilities https://github.com/alercebroker/baseline_classifier/wiki/Random-Forest-v1
 
 | Column | Type | Modifier | Description |
 | ------ | ---- | -------- | ----------- |
 |  oid           |  text              |  not null   | |
 |  classifierid  |  integer           |  not null   | |
-|  ceph_prob     |  double precision  |             | |
-|  dsct_prob     |  double precision  |             | |
-|  eb_prob       |  double precision  |             | |
-|  lpv_prob      |  double precision  |             | |
-|  rrl_prob      |  double precision  |             | |
-|  sne_prob      |  double precision  |             | |
-|  other_prob    |  double precision  |             | |
+|  ceph_prob     |  double precision  |             | Cepheid probability |
+|  dsct_prob     |  double precision  |             | Delta scuti probability |
+|  eb_prob       |  double precision  |             | Eclipsing binary probability |
+|  lpv_prob      |  double precision  |             | Long-period variable probability |
+|  rrl_prob      |  double precision  |             | RR Lyrae probability |
+|  sne_prob      |  double precision  |             | Supernovae probability |
+|  other_prob    |  double precision  |             | "Other" probability (Tidal disruption event, active galactic nuclei, other pulsating objects, cataclismic variables, novae, other periodic objects) |
 |  object_id     |  integer           |             | |
 
 
