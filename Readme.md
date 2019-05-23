@@ -102,7 +102,7 @@ Description of FATS features is in http://isadoranun.github.io/tsfeat/FeaturesDo
 | Column         | Type             | Modifier | Description |
 | -------------- | ---------------- | -------- | ----------- |
 | **oid** |  text              |  not null   |  ZTF object id |
-| **n_samples_1** |  integer           |             |                |
+| **n_samples_1** |  double precision  |             |                |
 | **amplitude_1** |  double precision  |             |                |
 | **andersondarling_1** |  double precision  |             |                |
 | **autocor_length_1** |  double precision  |             |                |
