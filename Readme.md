@@ -6,49 +6,49 @@
 
 | Column         | Type             | Modifier | Description |
 | -------------- | ---------------- | -------- | ----------- |
-| **id** |  integer           |  not null  |               |
-| **oid** |  text              |  not null  |               |
-| **nobs** |  integer           |            |               |
-| **mean_magap_g** |  double precision  |            |               |
-| **mean_magap_r** |  double precision  |            |               |
-| **median_magap_g** |  double precision  |            |               |
-| **median_magap_r** |  double precision  |            |               |
-| **max_magap_g** |  double precision  |            |               |
-| **max_magap_r** |  double precision  |            |               |
-| **min_magap_g** |  double precision  |            |               |
-| **min_magap_r** |  double precision  |            |               |
-| **sigma_magap_g** |  double precision  |            |               |
-| **sigma_magap_r** |  double precision  |            |               |
-| **last_magap_g** |  double precision  |            |               |
-| **last_magap_r** |  double precision  |            |               |
-| **first_magap_g** |  double precision  |            |               |
-| **first_magap_r** |  double precision  |            |               |
-| **mean_magpsf_g** |  double precision  |            |               |
-| **mean_magpsf_r** |  double precision  |            |               |
-| **median_magpsf_g** |  double precision  |            |               |
-| **median_magpsf_r** |  double precision  |            |               |
-| **max_magpsf_g** |  double precision  |            |               |
-| **max_magpsf_r** |  double precision  |            |               |
-| **min_magpsf_g** |  double precision  |            |               |
-| **min_magpsf_r** |  double precision  |            |               |
-| **sigma_magpsf_g** |  double precision  |            |               |
-| **sigma_magpsf_r** |  double precision  |            |               |
-| **last_magpsf_g** |  double precision  |            |               |
-| **last_magpsf_r** |  double precision  |            |               |
-| **first_magpsf_g** |  double precision  |            |               |
-| **first_magpsf_r** |  double precision  |            |               |
-| **meanra** |  double precision  |            |               |
-| **meandec** |  double precision  |            |               |
-| **sigmara** |  double precision  |            |               |
-| **sigmadec** |  double precision  |            |               |
-| **deltajd** |  double precision  |            |               |
-| **lastjd** |  double precision  |            |               |
-| **firstjd** |  double precision  |            |               |
-| **period** |  double precision  |            |               |
-| **catalogid** |  integer           |            |               |
-| **classxmatch** |  integer           |            |               |
-| **classrf** |  integer           |            |               |
-| **pclassrf** |  double precision  |            |               |
+| **id** |  integer           |  not null  | Internal ALeRCE ID |
+| **oid** |  text              |  not null  | ZTF object ID |
+| **nobs** |  integer           |            | Number of observations |
+| **mean_magap_g** |  double precision  |            | Mean aperture corrected magnitude in g |
+| **mean_magap_r** |  double precision  |            | Mean aperture corrected magnitude in r band |
+| **median_magap_g** |  double precision  |            | Median aperture corrected magnitude in g |
+| **median_magap_r** |  double precision  |            | Median aperture corrected magnitude in r |
+| **max_magap_g** |  double precision  |            | Max aperture corrected magnitude in g |
+| **max_magap_r** |  double precision  |            | Max aperture corrected magnitude in r |
+| **min_magap_g** |  double precision  |            | Min aperture corrected magnitude in g |
+| **min_magap_r** |  double precision  |            | Min aperture corrected magnitude in r |
+| **sigma_magap_g** |  double precision  |            | Standard deviation of the aperture corrected magnitude in g |
+| **sigma_magap_r** |  double precision  |            | Standard deviation of the aperture corrected magnitude in r |
+| **last_magap_g** |  double precision  |            | Last value of the aperture corrected magnitude in g |
+| **last_magap_r** |  double precision  |            | Last value of the aperture corrected magnitude in r |
+| **first_magap_g** |  double precision  |            | First value of the aperture corrected magnitude in g |
+| **first_magap_r** |  double precision  |            | First value of the aperture corrected magnitude in r |
+| **mean_magpsf_g** |  double precision  |            | Mean value of the psf corrected magnitude in g |
+| **mean_magpsf_r** |  double precision  |            | Mean value of the psf corrected magnitude in r |
+| **median_magpsf_g** |  double precision  |            | Median value of the psf corrected magnitude in g |
+| **median_magpsf_r** |  double precision  |            | Mean value of the psf corrected magnitude in r |
+| **max_magpsf_g** |  double precision  |            | Max value of the psf corrected magnitude in g |
+| **max_magpsf_r** |  double precision  |            | Max value of the psf corrected magnitude in r |
+| **min_magpsf_g** |  double precision  |            | Min value of the psf corrected magnitude in g |
+| **min_magpsf_r** |  double precision  |            | Min value of the psf corrected magnitude in r |
+| **sigma_magpsf_g** |  double precision  |            | Standard deviation of the psf corrected magnitude in g |
+| **sigma_magpsf_r** |  double precision  |            | Standard deviation of the psf corrected magnitude in r |
+| **last_magpsf_g** |  double precision  |            | Last value of the psf corrected magnitude in g |
+| **last_magpsf_r** |  double precision  |            | Last value of the psf corrected magnitude in r |
+| **first_magpsf_g** |  double precision  |            | First value of the psf corrected magnitude in g |
+| **first_magpsf_r** |  double precision  |            | First value of the psf corrected magnitude in r |
+| **meanra** |  double precision  |            | Mean right ascension (deg) |
+| **meandec** |  double precision  |            | Mean declination (deg) |
+| **sigmara** |  double precision  |            | Standard deviation of the right ascension (deg) |
+| **sigmadec** |  double precision  |            | Standard deviation of the declination (deg) |
+| **deltajd** |  double precision  |            | Difference between the last and first detections |
+| **lastmjd** |  double precision  |            | Last detected modified julian date |
+| **firstmjd** |  double precision  |            | First detected modified julian date |
+| **period** |  double precision  |            | Reported Period if any |
+| **catalogid** |  integer           |            | Preferred Catalog where a cross match exists if any |
+| **classxmatch** |  integer           |            | ID in the previous cross match catalog if any |
+| **classrf** |  integer           |            | predicted class according to the random forest classifier |
+| **pclassrf** |  double precision  |            | probability of the most likely class according to the random forest classfier|
 
 ## 2. detections
 
@@ -59,7 +59,7 @@ Attributes retrieved from the ZTF alert.
 | **object_id** |  integer           |             | unique identifier for this object (number format) |
 | **oid** |  text              |             | unique identifier for this object (ZTF format) |
 | **candid** |  bigint            |             | Candidate ID from operations DB                              |
-| **jd** |  double precision  |             | Observation Julian date at start of exposure [days] |
+| **mjd** |  double precision  |             | Observation Julian date at start of exposure [days] |
 | **fid** |  smallint          |             | Filter ID (1=g; 2=r; 3=i) |
 | **diffmaglim** |  double precision  |             | 5-sigma mag limit in difference image based on PSF-fit photometry [mag] |
 | **magpsf** |  double precision  |             | magnitude from PSF-fit photometry [mag] |
@@ -83,14 +83,14 @@ Attributes retrieved from the ZTF alert.
 | **sigmapsf_corr** |  double precision  |             |                |
 | **sigmagap_corr** |  double precision  |             |                |
 
-## 3. no_detections
+## 3. non_detections
 
 // Insert description
 
 | Column         | Type             | Modifier | Description |
 | -------------- | ---------------- | -------- | ----------- |
 | **oid** |  text              |             |                |
-| **jd** |  double precision  |             |                |
+| **mjd** |  double precision  |             |                |
 | **diffmaglim** |  double precision  |             |                |
 | **fid** |  smallint          |             |                |
 | **object_id** |  integer           |             |                |
