@@ -2,8 +2,6 @@
 
 ## 1. objects
 
-// Insert description
-
 | Column         | Type             | Modifier | Description |
 | -------------- | ---------------- | -------- | ----------- |
 | **id** |  integer           |  not null  | Internal ALeRCE ID |
@@ -85,15 +83,13 @@ Attributes retrieved from the ZTF alert.
 
 ## 3. non_detections
 
-// Insert description
-
 | Column         | Type             | Modifier | Description |
 | -------------- | ---------------- | -------- | ----------- |
-| **oid** |  text              |             |                |
-| **mjd** |  double precision  |             |                |
-| **diffmaglim** |  double precision  |             |                |
-| **fid** |  smallint          |             |                |
-| **object_id** |  integer           |             |                |
+| **oid** |  text              |             | ZTF object id |
+| **mjd** |  double precision  |             | Modified Julian Date |
+| **diffmaglim** |  double precision  |             | Limiting difference magnitude |
+| **fid** |  smallint          |             | FIlter ID (1=g; 2=r; 3=i)|
+| **object_id** |  integer           |             | unique identifier for this object (number format) |
 
 ## 4. features
 
