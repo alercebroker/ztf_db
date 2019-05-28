@@ -44,7 +44,7 @@
 | **firstmjd** |  double precision  |            | First detected modified julian date |
 | **period** |  double precision  |            | Reported Period if any [days] |
 | **catalogid** |  integer           |            | Preferred Catalog where a cross match exists if any |
-| **classxmatch** |  integer           |            | ID in the previous cross match catalog if any |
+| **classxmatch** |  integer           |            | ID in the previous cross match catalog if any. See https://github.com/alercebroker/ztf_pipeline/blob/b5d64eca7c124172b85841d7974571b3127b549e/ztf_pipeline/crossmatch.py#L42 |
 | **classrf** |  integer           |            | predicted class according to the random forest classifier |
 | **pclassrf** |  double precision  |            | probability of the most likely class according to the random forest classfier|
 
