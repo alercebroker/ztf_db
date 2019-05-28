@@ -37,14 +37,14 @@
 | **last_magpsf_r** |  double precision  |            | Last value of the psf corrected magnitude in r |
 | **first_magpsf_g** |  double precision  |            | First value of the psf corrected magnitude in g |
 | **first_magpsf_r** |  double precision  |            | First value of the psf corrected magnitude in r |
-| **meanra** |  double precision  |            | Mean right ascension (deg) |
-| **meandec** |  double precision  |            | Mean declination (deg) |
-| **sigmara** |  double precision  |            | Standard deviation of the right ascension (deg) |
-| **sigmadec** |  double precision  |            | Standard deviation of the declination (deg) |
+| **meanra** |  double precision  |            | Mean right ascension [deg] |
+| **meandec** |  double precision  |            | Mean declination [deg] |
+| **sigmara** |  double precision  |            | Standard deviation of the right ascension [deg] |
+| **sigmadec** |  double precision  |            | Standard deviation of the declination [deg] |
 | **deltajd** |  double precision  |            | Difference between the last and first detections |
 | **lastmjd** |  double precision  |            | Last detected modified julian date |
 | **firstmjd** |  double precision  |            | First detected modified julian date |
-| **period** |  double precision  |            | Reported Period if any |
+| **period** |  double precision  |            | Reported Period if any [days] |
 | **catalogid** |  integer           |            | Preferred Catalog where a cross match exists if any |
 | **classxmatch** |  integer           |            | ID in the previous cross match catalog if any |
 | **classrf** |  integer           |            | predicted class according to the random forest classifier |
